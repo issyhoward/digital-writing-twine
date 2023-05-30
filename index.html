@@ -12,9 +12,9 @@
 <tw-storydata name="Sisters" startnode="1" creator="Twine" creator-version="2.6.2" format="Harlowe" format-version="3.3.5" ifid="5CFA4883-A144-4064-A6B1-D02D4F8A3BF5" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap'); 
 
 tw-story {
-	font-family: 'EB Garamond', serif;
-    color: #FFFFFF;
-  	background-color: #7A4F40;
+	font-family: 'M PLUS Rounded 1c', sans-serif;
+    color: #605B4D;
+  	background-color: #C4BA9D;
 }  
 
 
@@ -24,13 +24,13 @@ tw-story {
 }
   
 tw-link, tw-link:link, tw-link:visited, tw-link.visited {
-  color: #FAA282;
+  color: #403C33;
   text-decoration: 
   
 }  
    
 tw-link:focus, tw-link:hover, tw-link:active, tw-link.visited:hover { 
-  color: #FAA282;
+  color: #5C5749;
   text-decoration: none;
 }
 .hover-text { 
@@ -46,15 +46,29 @@ tw-link:focus, tw-link:hover, tw-link:active, tw-link.visited:hover {
   z-index: 1000;
   width: 500px;
 }
-</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Untitled Passage" tags="" position="600,275" size="100,100">
-You ignore the signal and &lt;span class=&quot;hover-text&quot;&gt;continue&lt;img class=&quot;hover-image&quot; src=&quot;./images/text for hover.PNG&quot; alt=&quot;you are floating in space&quot; /&gt;&lt;/span&gt; your mission. As you explore a nearby planet, you encounter hostile alien lifeforms.
 
+.aliens:hover {
+opacity: 0;
+transition: 1s all ease;
+}
 
+</style><script role="script" id="twine-user-script" type="text/twine-javascript">// Variable to store the scroll position in UntitiledPassage
+var mainPageScrollPosition = 0;
 
+// Function to store the scroll position in UntitledPassage
+function storeScrollPosition() {
+    mainPageScrollPosition = window.scrollY;
+}
 
-Abigail&#39;s on her way, probably walking down the main street in knee high boots, clutching the cake she promised to bring like a careless baby on her hip. Danni will be with her &lt;/span&gt;  &lt;span class=&quot;hover-text&quot;&gt;Georgia&lt;img class=&quot;hover-image&quot; src=&quot;./images/Danni.PNG&quot; alt=&quot;you are floating in space&quot; /&gt;&lt;/span&gt;   assumes, trailing behind her like a lost puppy. The last time they were all together was Christmas, and the minty after taste of their festive spat still looms in the air.  
+// Function to return to MainPage and restore scroll position
+function goBackToUntitledPassage() {
+    window.scrollTo(0, untitledPassageScrollPosition);
+    setup.return();
+}
+</script><tw-passagedata pid="1" name="sister" tags="" position="600,275" size="100,100">
+Abigail&#39;s on her way, probably walking down the main street in knee high boots, clutching the cake she promised to bring like a careless baby on her hip. Danni will be with her &lt;/span&gt;  &lt;span class=&quot;hover-text&quot;&gt;Georgia&lt;img class=&quot;hover-image&quot; src=&quot;./images/Danni.PNG&quot; alt=&quot;about Georgia&quot; /&gt;&lt;/span&gt;   assumes, trailing behind her like a lost puppy. The last time they were all together was Christmas, and the minty after taste of their festive spat still looms in the air.  
 
-&lt;span style=&quot;font-weight:bold;&quot;&gt;Danni&lt;/span&gt; prepares herself for the peacemaker role her sisters will inevitably make her play. Walking two paces behind Abigail, she gives her space for attention. She&#39;s accepted this evening won&#39;t be about her, and why would it? Her phone sits like a rock in her pocket, and she sees the closed gate of Georgia&#39;s townhouse ahead. 
+&lt;/span&gt;  &lt;span class=&quot;hover-text&quot;&gt;Danni&lt;img class=&quot;hover-image&quot; src=&quot;./images/Georgia.PNG&quot; alt=&quot;about Georgia&quot; /&gt;&lt;/span&gt;    prepares herself for the peacemaker role her sisters will inevitably make her play. Walking two paces behind Abigail, she gives her space for attention. She&#39;s accepted this evening won&#39;t be about her, and why would it? Her &lt;/span&gt;  &lt;span class=&quot;hover-text&quot;&gt;phone&lt;img class=&quot;hover-image&quot; src=&quot;./images/Gabe.PNG&quot; alt=&quot;about Georgia&quot; /&gt;&lt;/span&gt;  sits like a rock in her pocket, and she sees the closed gate of Georgia&#39;s townhouse ahead. 
 
 Georgia opens the door like she&#39;s opening a casket, at least that&#39;s how it feels. If  &lt;/span&gt;  &lt;span class=&quot;hover-text&quot;&gt;Abigail&lt;img class=&quot;hover-image&quot; src=&quot;./images/Abigail.PNG&quot; alt=&quot;you are floating in space&quot; /&gt;&lt;/span&gt; is the ghostly corpse, her sister is the executor. The hallway is small and it&#39;s hard to hug her sister without squishing the cake between them. She&#39;s spent hours building the layers and smoothing the icing, anticipating her sisters critical review. 
 
@@ -73,10 +87,13 @@ I don’t know it&#39;s been a big week, I don&#39;t want getting drunk to becom
 Your outlet?
 Yeah I don’t know, I guess a coping mechanism. I&#39;m trying other things. Did I ever tell you Sam&#39;s Grandma was an alcoholic?
 I don’t think so. I wouldn’t worry anyway, I fetched this from Dad&#39;s house. It&#39;s a pinot so it&#39;s less carb-heavy, fewer calories and less sugar. 
-That&#39;s not really the point.
+That&#39;s not really the point, Abigail says. 
 Where&#39;s Danni, who&#39;s she talking to?
 You&#39;ve already asked me, I don’t know. 
-Will you have some of the cake or is that a coping mechanism too. 
+Will you have some of the cake or is that a coping mechanism too?
+
+
+
 
 [[Georgia]] thought the tension would arise later in the night, when the wine loosened their tongues, and conversation eventually led to what none of them were talking about, yet here she was, stirring it herself.
 
@@ -87,9 +104,9 @@ Danni puts her phone in her bag like she would a letter in an envelope. The girl
 
 Who was that? Georgia asks, trying to hide her eagerness to know in an unbothered tone. It doesn&#39;t work. 
 
-Just someone from work. Sorry, he called me just as i parked the car. How are things with you anyway, place looks fab. 
+Just someone from work. Sorry, he called me just as I parked the car. How are things with you anyway, place looks fab. 
 
-Yeah, thanks. Yeah good, really good. Time away from George has given me a new perspective on things, it&#39;s given me time to think and focus on my job, and - 
+Yeah, thanks. Yeah good, really good. Time away from George has given me a new perspective on things. It&#39;s given me time to think and focus on my job, and - 
 Georgia takes a couple sips from her wine glass, and feels her legs start to go tingly. 
 
 [[Danni]] pulls out her phone again to diverge eye-contact from her sister. She seems more wound up than usual. She humms and nods, waiting for Abigail to jump in. 
@@ -97,29 +114,95 @@ Georgia takes a couple sips from her wine glass, and feels her legs start to go 
 The room is quiet. Suddenly Georgia wishes she&#39;d suggested a movie night so that she could equip the room with something other than blank stares and mouthes that don&#39;t know what to say. 
 
 I saw George the other day, Abigail says. Yeah Sam and I were grocery shopping, we bumped into him just on the high street. 
+Oh okay, nice how was he? 
+Just his usual self. Well it&#39;s funny actually because - 
+Was he with anyone?
+No. But he umm..
+What?
+No it&#39;s just he caught me at a bad time. 
 
-Oh okay, nice how was he. 
-Just his usual self.
+[[Georgia keeps quiet.]] 
+
+Abigail looks to her sister out of an eagerness for her to insert herself into the conversation. Danni looks sympathetically, and then back down at her &lt;span class=&quot;hover-text&quot;&gt;phone&lt;img class=&quot;hover-image&quot; src=&quot;./images/Gaberesponse.PNG&quot; alt=&quot;you are floating in space&quot; /&gt;&lt;/span&gt; . 
+
+The room feels dark, like the sun set just before the room realised. [[Abigail gets up]] to turn the lamps on, as Georgia reaches for the kitchen to check on dinner. 
+
+I like your bag, Danni says. 
+Thanks, Abigail replies. 
+They both look at each other warmly and in unison nod and say: Sam?
+
+When Georgia returns, she places the lasagna in the middle of the table like a wreath, and clinks the cutlery onto the placemats as if restrained by her own gestures. If the sisters were honest, now would be the perfect time to open up to each other. To gather their secrets and sadness, passing them around the table like depressed condiments. 
+
+&lt;div class=&quot;aliens&quot;&gt; Georgia would tell them how broken she feels, that George was the only thing that made sense to her, and the only person that allowed her to make sense to herself. And Danni would tell them that she&#39;s moving accross the world, and that she&#39;s scared. That she&#39;s always felt abandoned by them, and she doesn&#39;t want to do the same but she needs a fresh start. And maybe then Abigail would unpeel in her pain, allow the sharing of vulnerability to cast her into honesty. To tell of the child she dreamt of, with her sisters when they were kids, and dolls breathed in their ams, and how she got so close. Maybe they&#39;d cry then, a deluge of tears, of not just sadness, but other things too. And maybe then, here around this table, the sisters could grieve the irrevocable spaces between them.&lt;/div&gt;
+
+But instead, they keep silent. Each quiet in their own chambers of thought. 
+
+The sound of clinking knives scraping on the ceramic plates makes Danni cringe. She thought tonight she could tell them about the move, and if not in its entirety at least mention the idea, but the tension between her sisters dissuades her. 
+
+At the end of the meal, Abigail stands up and clears the plates. 
+
+Thanks for dinner, Danni says, pulling her chair back as if to stand.
+You&#39;re not leaving are you? Georgia says.
+No umm- well actually yeah I better head off.
+But you&#39;ve only been here less than an hour.
+I know but works hectic at the minute, and somethings come up.
+Okay, yeah all good then. 
+
+In the kitchen Danni hugs Abigail, and sees over her shoulder the cake she made for desert wrapped in cling film. 
+
+Will I see you soon, Abigail says. 
+Yeah, should do. 
+Alright well maybe I&#39;ll leave with you.
+
+The dining room table sits half cluttered, devoid of aftertable chatter, and roughly cut cake. The candles Georgia lit before they came still flicker, and Abigail feels sad suddenly, imaging her sister all alone in this big house. In the morning she&#39;ll call, she thinks. In the morning she&#39;ll try again. 
 
 
 
 
 
-</tw-passagedata><tw-passagedata pid="2" name="Abigail" tags="" position="725,400" size="100,100">Abigail just had a miscarriage. It was on the way home from dinner. Sam was making her laugh, white toothed in the dusk-light when she felt a pain growing below her chest, a warmth spreading in her jeans. When they got to the house Sam held her to the door. She thought of herself as a child, but the darkness did little to carry her. It took about a month for her body to return to normal, and all that time she never told her sisters. Eventually when she went back to work, her staff had placed a card in her locker. Get well soon. She&#39;s loathed at work because Sam buys her designer, clothes she&#39;s somehow not worthy of because she can&#39;t buy them herself. She hopes they don&#39;t know the reason she was away for a while, she already anticipates their judgement. She hasn&#39;t told her sisters yet, for a reason she&#39;s not entirely sure. 
 
 
 
-</tw-passagedata><tw-passagedata pid="3" name="Georgia" tags="" position="600,400" size="100,100">Georgia wants to be revered, just once. It&#39;s like no matter how hard she tries, her sisters never respect her. 
 
 
 
-It&#39;s as if Abigail is always two steps ahead, she&#39;s read the book before Georgia&#39;s even learnt it&#39;s name. 
 
-When George was around he made nights like these easier. He matched her sister in ways that Georgia never could. He helped insert her into Abigail&#39;s world of philosphy and culture, meeting her in conversation at a place Georgia felt so removed from. But by way of him she extended into her sisters world.  
 
-Her sister makes her feel sterile, isolated. Like she&#39;s too senile for her hot yoga, posh philosphy friends, and too up herself for community gardening and book club meetings. The only time they hang out is to argue, and the only time Abigail talks to her is to remind her sister of her lack of critical thinking. 
 
-</tw-passagedata><tw-passagedata pid="4" name="Danni" tags="" position="475,400" size="100,100">Danni&#39;s been working harder than ever, so much so her non-working hours have become just a matter of eating and sleeping. When she was younger she always felt the need to prove herself to her sisters. Running faster than them, reading faster than them, gaining approval from aunties and uncles, before they got preoccupied with the other sisters like everyone else. Recently she&#39;s been running so fast, she&#39;s forgotten who she&#39;s even doing this for. If this is all for sisterly approval, she&#39;s taking it way too far. </tw-passagedata><tw-passagedata pid="5" name="hover" tags="" position="725,525" size="100,100"></tw-passagedata></tw-storydata>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</tw-passagedata><tw-passagedata pid="2" name="Abigail" tags="" position="725,400" size="100,100">It&#39;s the first time Abigail has been out with her sisters since the miscarriage. She wants to tell them, but already it feels too much. Like the second she comes out with it, she&#39;ll spill over like water gushing over a dam wall. It&#39;s weird, she&#39;s never felt able to open up to her sisters, especially Georgia. It&#39;s as if in being the eldest, Georgia vitoed the experience of trauma. That what happened to her younger siblings was only a retelling of what happened to her first, a lighter version, incomparable to hers.  But here Abigail was, alone in her loss. And too afraid to reach out to her sisters, too afraid they&#39;ll react exacly how she imagines. 
+
+
+
+</tw-passagedata><tw-passagedata pid="3" name="Georgia" tags="" position="600,400" size="100,100">Georgia knows how her sisters will react even before she opens her mouth. They&#39;re always two steps ahead of her, always pre-empting her opinions, disagreeing with what she says before she even finshes her sentence. &#39;Let&#39;s unpack that&#39;, they say, at a crossroads with her eye-rolling. Always speaking to her like she&#39;s just stepped onto the planet. She just wants to be revered, just once. Appreciated as the one that ploughed through life, alone before they were born. The first to witness Mum and Dad fighting, the first to recieve their anger. 
+
+</tw-passagedata><tw-passagedata pid="4" name="Danni" tags="" position="475,400" size="100,100">Two weeks ago Danni got an email from her boss offering her the oppertunity to transfer  to London as soon as possible. As part of their international scheme, Danni would be running the British expansion project. It would mean leaving her sisters for a year max and renting out her apartment. Gabe has already said he&#39;d make the move with her, she&#39;s just not sure if she&#39;s got it in her. Moving out of home was one thing, but to London - that was something else entirely. 
+
+
+
+
+</tw-passagedata><tw-passagedata pid="5" name="hover" tags="" position="725,525" size="100,100"></tw-passagedata><tw-passagedata pid="6" name="Georgia keeps quiet." tags="" position="600,525" size="100,100">Can Abigail really not register the pain of his name? And is she really already making it about her? The victim of &quot;wrong timing&quot;, when Georgia thought that he was her soulmate, her life-long partner. 
+There&#39;s such a duality, Georgia either hates him, curses his name - or needs him like she does water. Right now is one of the moments she needs him. He had this ability of reaching Abigail in a way she never could. And by way of that, he extended her into her sisters world. That she respected her because of him. (Something she would never admit). George could help Abigail become aware of things, like right now he would say: &#39;Abigail can you understand how upsetting this is for your sister, maybe you could have brought this up in a better way&#39;. And she would say, &#39;Yeah, your right George, I&#39;m sorry G&#39;. But instead he&#39;s not here, and Georgia is strung out and defenseless. 
+
+</tw-passagedata><tw-passagedata pid="7" name="javascript:goBackToGeorgiaonUntitledPassage()" tags="" position="475,525" size="100,100">[[sister]] </tw-passagedata><tw-passagedata pid="8" name="Abigail gets up" tags="" position="600,650" size="100,100">Something about Georgia&#39;s plush sofa reminds Abigail of when the sisters were young, and their mum took them to the cinema two weeks before the divorce.  It was a doddery cinema in knox, the chairs had ripped velvet, worn down to the base fabric so it felt more itchy than soft. At the ticket stand Georgia had rushed forward, tearing at the shelves and demanding for each of them what they would have. Danni: the sherberts, Abigail: the coke bottles, and Georgia: the malteesers. It was funny, even though she didn&#39;t let her choose, Georgia had grabbed exactly what Abigail had wanted. 
+
+When they all sat down, Georgia sat next to their mum. And when Danni and Abigail giggled and shared sweets, Georgia hugged their mum whilst she cried. It was the first time Abigail had noticed sister being older; that she belonged to the adult world now. The world that made decisions for others, and held tears in when they felt like screaming. Abigail remembers the relief of not having to sit next to her mother, the relief of Georgia recieving her pain.  
+
+The few weeks after that cinema trip, Abigail cried herself to sleep worrying about what had made her mother so upset. And when Georgia spoke to her mum in whispers, and they held hands under the table, it felt that Abigail didn&#39;t exist at all.  
+
+</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
